@@ -108,7 +108,7 @@ login ssh via putty
 
 ![](za1.PNG)
 
-6. **jump**
+6. **jump**    
    kita akan membuat dimana chain bisa melompat ke chain tertentu dengan chain custom  
 
 ![](zs2.PNG)
@@ -118,3 +118,19 @@ login ssh via putty
 ![](zs1.PNG)
 
 ![](zs4.PNG)
+
+7. **return**
+   Kembali ke chain asal lebih awal, tidak menunggu sampai akhir custom chain. Setelah return, paket balik ke chain input, lalu diterusin baca rule berikutnya setelah jump.
+
+![](zs9.PNG)
+
+![](zs8.PNG)
+
+8. **passthrough**  
+   Jika rule tidak match, paket langsung berhenti di rule itu.
+
+![](zz1.PNG)
+
+![](zz2.PNG)
+
+![](zz3.PNG)
