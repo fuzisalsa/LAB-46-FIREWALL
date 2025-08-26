@@ -95,4 +95,15 @@ login ssh via putty
 
 ![](zx10.PNG)
 
-   Siapa pun yang mencoba akses SSH ke router Mikrotik akan dijebak Mereka tidak akan bisa login, tapi juga tidak langsung ditolak Sesi koneksi akan menggantung, menguras sumber daya penyerang 22 dalah port dari ssh dan ssh juga masuk ke protocol tcp 
+   Siapa pun yang mencoba akses SSH ke router Mikrotik akan dijebak Mereka tidak akan bisa login, tapi juga tidak langsung ditolak Sesi koneksi akan menggantung, menguras sumber daya penyerang 22 dalah port dari ssh dan ssh juga masuk ke protocol tcp.
+
+5. add-dst-to-address-list
+   IP tujuan paket yang match akan dimasukan ke address list. Biasanya dipakai untuk tracking koneksi luar,   
+   Contoh Penggunaan:   
+   Contoh kita mau mencatat IP tujuan yang diakses klien.
+
+![](za2.PNG)
+
+![](za3.PNG)
+
+![](za1.PNG)
