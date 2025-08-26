@@ -73,7 +73,7 @@ Firewall adalah sistem keamanan yang berfungsi untuk memonitor dan mengontrol la
 
    Menolak (**reject**)  semua paket ICMP (misalnya: ping) Yang datang ke router melalui interface ether2 Dengan memberi tahu pengirim bahwa permintaan ditolak (berbeda dari drop yang diam-diam).
 
-3. action log Mencatat semua trafik ICMP (ping) yang masuk ke router lewat ether2 Tapi tidak menghentikan atau memproses paketnya secara langsung Mikrotik akan melanjutkan pemrosesan ke rule selanjutnya. berikut cara konfig dan cek nya:
+3. action **log** Mencatat semua trafik ICMP (ping) yang masuk ke router lewat ether2 Tapi tidak menghentikan atau memproses paketnya secara langsung Mikrotik akan melanjutkan pemrosesan ke rule selanjutnya. berikut cara konfig dan cek nya:
 
     pilih menu ip > firewaal > filter rules
 
@@ -97,7 +97,7 @@ login ssh via putty
 
    Siapa pun yang mencoba akses SSH ke router Mikrotik akan dijebak Mereka tidak akan bisa login, tapi juga tidak langsung ditolak Sesi koneksi akan menggantung, menguras sumber daya penyerang 22 dalah port dari ssh dan ssh juga masuk ke protocol tcp.
 
-5. add-dst-to-address-list
+5. **add-dst-to-address-list**
    IP tujuan paket yang match akan dimasukan ke address list. Biasanya dipakai untuk tracking koneksi luar,   
    Contoh Penggunaan:   
    Contoh kita mau mencatat IP tujuan yang diakses klien.
@@ -107,3 +107,14 @@ login ssh via putty
 ![](za3.PNG)
 
 ![](za1.PNG)
+
+6. **jump**
+   kita akan membuat dimana chain bisa melompat ke chain tertentu dengan chain custom  
+
+![](zs2.PNG)
+
+![](zs3.PNG)
+
+![](zs1.PNG)
+
+![](zs4.PNG)
