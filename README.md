@@ -135,7 +135,7 @@ login ssh via putty
 
 ![](zz3.PNG)
 
-9. accept
+9. **accept**      
    disini saya akan mengizinkan ping yang berasal dari ether2 ke mikrotik
 
 ![](zz4.PNG)
