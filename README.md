@@ -141,3 +141,30 @@ login ssh via putty
 ![](zz4.PNG)
 
 ![](zzz.PNG)
+
+10. **add src to addres list**
+    IP sumber paket yang match dengan rule ini akan ditambahkan ke address list. Biasanya blacklist otomatis, IP yang gagal login ke SSH dalam berapa kali masuk ke blacklist.
+
+![](a0.PNG)
+
+![](a09.PNG)
+
+![](a08.PNG)
+
+![](a07.PNG)
+
+11. **fasttrack-connection**
+    Fitur untuk mempercepat proses forward paket di Mikrotik. Biasanya paket masuk dicek semua oleh firewall filter, NAT, Mangle. Kalau connection fasttrack, paket selanjutnya langsung dilewatkn tanpa di periksa lagi (kecuali paket pertama). disini saya mau mempercepat trafik dari LAN ke Internet.
+
+![](yui1.PNG)
+
+![](yui2.PNG)
+
+![](yui3.PNG)
+
+![](yui4.PNG)
+    
+    Pengujiannya
+
+        tool profile
+    CPU usage akan lebih rendah dibanding tanpa FastTrack.
