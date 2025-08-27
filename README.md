@@ -149,6 +149,8 @@ login ssh via putty
 
 ![](a09.PNG)
 
+pengujian via putty 
+
 ![](a08.PNG)
 
 ![](a07.PNG)
